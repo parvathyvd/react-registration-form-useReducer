@@ -1,0 +1,78 @@
+*,::after,::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: monospace;
+}
+
+.main-wrapper{
+  width: 40rem;
+  background: #373B44;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 1rem;
+  }
+.main-wrapper h1{
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+.register-form{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+input{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgb(214, 214, 214);
+}
+input::placeholder{
+  color: #fff;
+}
+.terms{
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.accept{
+  border: none;
+}
+.btn-submit{
+  background: #ff7e5f;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #feb47b, #ff7e5f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+  outline: none;
+  color: #fff;
+  padding: 1rem 2rem;
+  align-self: center;
+  border-radius: 1rem;
+  font-family: inherit;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  width: 80%;;
+}
+button:active{
+  transform: scale(0.9);
+  transition-duration: 100ms;
+}
+.btn-submit.disabled{
+  opacity: 0.7;
+}
+.btn-submit.disabled:active{
+  transform: none;
+}
